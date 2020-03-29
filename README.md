@@ -21,7 +21,7 @@ $ echo Hello    World!
 ```
 
 ```shell
-$ echo "Hello   World\!"
+$ echo "Hello   World"'!' # Extra spaces (note the need for '!')
 
 >>>
 Hello   World!
