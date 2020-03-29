@@ -28,7 +28,7 @@ $ echo "Hello   World"'!' # Extra spaces (note the need for '!')
 
 ## Simple renaming of single file
 
-Using ```mv``` to rename a single file
+Using ```mv``` to rename a single file. ```mv``` then ```original file name``` then ```new file name```
 
 ```shell
 $ mv file.txt file_rename.txt
