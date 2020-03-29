@@ -25,3 +25,15 @@ $ echo "Hello   World"'!' # Extra spaces (note the need for '!')
 ```
 
 ---
+
+## Simple renaming of single file
+
+Using ```mv``` to rename a single file
+
+```shell
+$ mv file.txt file_rename.txt
+```
+
+---
+
+## 
