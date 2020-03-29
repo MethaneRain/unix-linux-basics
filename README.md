@@ -50,6 +50,19 @@ $ echo "Hello   World"'!' # Extra spaces (note the need for '!')
 
 ---
 
+## % Symbol with variables
+
+When the percent sign (%) is used in the pattern ${variable%substring}, it will return content of the variable with the shortest occurrence of substring deleted from the back of the variable.
+
+This quick example will strip the extension off a sample ```csv``` file:
+```shell
+f = file1.csv 
+echo "${f%.csv}"
+
+>>> file1
+```
+---
+
 ## Subset of strings based off a deliminater
 
 Use ```cut``` command to cut a string based off a specific deliminater
