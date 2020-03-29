@@ -31,12 +31,12 @@ $ echo "Hello   World"'!' # Extra spaces (note the need for '!')
 Use ```cut``` command to cut a string based off a specific deliminater
 
 For example let's make a string ```this is a string```. We can run ```cut``` with the fdeliminater lag ```-d``` for which to cut the string based off. This will chop the string into the number of substrings between the deliminater. In this example, there will be 3 spaces and thus 4 substrings:
-<ul>
+<ol>
 <li>this</li>
 <li>is</li>
 <li>a</li>
 <li>string</li>
-</ul>
+</ol>
 
 The use the ```-f``` flag will grab the number issued to the substring. So ```-f4``` will grab the fourth substring ```string```
 
@@ -57,7 +57,7 @@ echo "${var}"
 >>> string
 ```
 
-In this code snippet, ```var``` will be the variable name and the trailing ```<<<``` before ```$STR``` does the actual assigning of substring to ```var```
+In this code snippet, ```var``` will be the variable name and the trailing ```<<<``` before ```$STR``` does the actual assigning of substring to ```var```.
 
 ---
 
