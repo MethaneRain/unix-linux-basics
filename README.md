@@ -3,8 +3,6 @@ A repo to document some basics in Unix/Linux scripting
 
 ## Printing to console
 
----
-
 Simple printing to the console with ```echo```
 
 In the terminal:
@@ -23,6 +21,7 @@ $ echo Hello    World!
 ```shell
 $ echo "Hello   World"'!' # Extra spaces (note the need for '!')
 
->>>
-Hello   World!
+>>>Hello   World!
 ```
+
+---
