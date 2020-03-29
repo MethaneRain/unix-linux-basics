@@ -9,7 +9,7 @@ Simple printing to the console with ```echo```
 
 In the terminal:
 ```shell
-$ echo "Hello World!
+$ echo Hello World!
 
 >>> Hello World!
 ```
@@ -21,7 +21,7 @@ $ echo Hello    World!
 ```
 
 ```shell
-$ echo "Hello   World!"
+$ echo "Hello   World/!"
 
 >>>
 Hello   World!
