@@ -1,6 +1,30 @@
 # unix-linux-basics
 A repo to document some basics in Unix/Linux scripting 
 
+## Listing all directories in current working drive by name
+
+Say I have to directories in my current drive named Folder1 and Folder2, I can list all the directories with the name ```Folder``` with ```ls``` and directory flag ```-d```
+
+```shell
+ls -d Folder
+
+>>> Folder1/ Folder2/ 
+```
+
+---
+
+## Listing all directories in current working drive
+
+In this example I have directories named Folder1, Folder2, Stuff, and Things. I can list only the directoriesin my current directory by using ```ls``` and flag ```-d``` like before, but now use the wildcard ```*``` with ```/``` (directory indicator)
+
+```shell
+ls -d */
+
+>>> Folder1/ Folder2/ Stuff/ Things/
+```
+
+---
+
 ## Printing to console
 
 Simple printing to the console with ```echo```
@@ -52,7 +76,7 @@ The above code snippet just printed the substring to the console, but let's assi
 ```shell
 STR="this is a string"
 var="$(cut -d' ' -f 4 <<< $STR)"
-echo "${var}"
+echo "$var"
 
 >>> string
 ```
