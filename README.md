@@ -15,7 +15,7 @@ ls -d Folder
 
 ## Listing all directories in current working drive
 
-In this example I have directories named Folder1, Folder2, Stuff, and Things. I can list only the directoriesin my current directory by using ```ls``` and flag ```-d``` like before, but now use the wildcard ```*``` with ```/``` (directory indicator)
+In this example I have directories named Folder1, Folder2, Stuff, and Things. I can list only the directories in my current directory by using ```ls``` and flag ```-d``` like before, but now use the wildcard ```*``` with ```/``` (directory indicator). 
 
 ```shell
 ls -d */
