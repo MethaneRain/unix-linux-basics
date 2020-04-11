@@ -21,8 +21,8 @@
 <tr>
 <td>!</td>
 <td>History Substitution</td>
-<td></td>
-<td></td>
+<td>!5</td>
+<td>Reexecutes 5th event in history list</td>
 </tr>
 
 <tr>
@@ -83,14 +83,14 @@
 
 <tr>
 <td>>!</td>
-<td>If ```noclobber``` is set; override</td>
+<td>If noclobber is set; override</td>
 <td></td>
 <td></td>
 </tr>
 
 <tr>
 <td>>>!</td>
-<td>If ```noclobber``` is set; override</td>
+<td>If noclobber is set; override</td>
 <td></td>
 <td></td>
 </tr>
