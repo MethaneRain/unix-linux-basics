@@ -8,7 +8,7 @@ Say I have to directories in my current drive named Folder1 and Folder2, I can l
 ```shell
 ls -d Folder
 
->>> Folder1/ Folder2/ 
+Folder1/ Folder2/ 
 ```
 
 ---
@@ -20,7 +20,7 @@ In this example I have directories named Folder1, Folder2, Stuff, and Things. I 
 ```shell
 ls -d */
 
->>> Folder1/ Folder2/ Stuff/ Things/
+Folder1/ Folder2/ Stuff/ Things/
 ```
 
 ---
@@ -33,19 +33,19 @@ In the terminal:
 ```shell
 $ echo Hello World!
 
->>> Hello World!
+Hello World!
 ```
 
 ```shell
 $ echo Hello    World!
 
->>> Hello World! # No extra spaces!
+Hello World! # No extra spaces!
 ```
 
 ```shell
 $ echo "Hello   World"'!' # Extra spaces (note the need for '!')
 
->>>Hello   World!
+Hello   World!
 ```
 
 ---
@@ -59,7 +59,7 @@ This quick example will strip the extension off a sample ```csv``` file:
 f = file1.csv 
 echo "${f%.csv}"
 
->>> file1
+file1
 ```
 ---
 
@@ -81,7 +81,7 @@ The use the ```-f``` flag will grab the number issued to the substring. So ```-f
 STR="this is a string"
 echo "$STR" | cut -d' ' -f4
 
->>> string
+string
 ```
 
 The above code snippet just printed the substring to the console, but let's assign it to a variable:
@@ -91,7 +91,7 @@ STR="this is a string"
 var="$(cut -d' ' -f 4 <<< $STR)"
 echo "$var"
 
->>> string
+string
 ```
 
 In this code snippet, ```var``` will be the variable name and the trailing ```<<<``` before ```$STR``` does the actual assigning of substring to ```var```.
@@ -144,7 +144,6 @@ do
    var=`expr $var + 1` # update var by adding 1 
 done
 
->>>
 0
 1
 2
@@ -196,7 +195,6 @@ Example: the string "Hello; World"
 ```shell
 echo Hello; World
 
->>>
 -bash: World: command not found
 ```
 
@@ -207,7 +205,6 @@ Corrected:
 ```shell
 echo Hello\; World
 
->>>
 Hello; World
 ```
 
@@ -243,7 +240,6 @@ Obviously there are some typos here, but sed can quick show changes:
 ```shell
 $ sed 's/Hellow Wolrd1/Hello World!/' file.txt
 
->>>
 Hello World!
 ```
 
