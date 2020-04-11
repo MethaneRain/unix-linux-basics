@@ -200,7 +200,7 @@ Cetain characters in the Shell have special meaning and will result in the scrip
 
 Example: the string "Hello; World"
 
-* '!' is a special character so the script will terminate if run like:
+* ';' is a special character that expects the following information to be a separate script command:
 
 ```shell
 echo Hello; World
@@ -209,7 +209,7 @@ echo Hello; World
 -bash: World: command not found
 ```
 
-The script ends after the ';' and then it tries to interpret the token ```World``` to no avail (unless it is set somewhere else).
+The script ends after the ';' and then it tries to interpret the command ```World``` to no avail (unless it is set somewhere else).
 
 Corrected:
 
