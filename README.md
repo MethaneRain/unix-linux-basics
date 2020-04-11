@@ -215,6 +215,9 @@ Corrected:
 
 ```shell
 echo Hello\; World
+
+>>>
+Hello; World
 ```
 
 Example: ```$``` character
