@@ -169,7 +169,7 @@ done
 
 #### for-loop
 
-Example: print names of all shell files in current directory that start with rename
+Example: print names of all ```.sh``` files in directory named Shell that start with rename
 
 ```shell
 FILES=Shell/rename*.sh
@@ -186,8 +186,39 @@ Shell/rename_multi_cut.sh
 
 #### until-loop
 
+Example: 
+
 #### select-loop
 
 
 
 ---
+
+## Metacharacters
+
+Cetain characters in the Shell have special meaning and will result in the script to terminate with out being addressed. Adding a backslash ```\``` before the special character will pass it.
+
+Example: the string "Hello; World"
+
+* '!' is a special character so the script will terminate if run like:
+
+```shell
+echo Hello; World
+
+>>>
+-bash: World: command not found
+```
+
+The script ends after the ';' and then it tries to interpret the token ```World``` to no avail (unless it is set somewhere else).
+
+Corrected:
+
+```shell
+echo Hello\; World
+```
+
+Example: '$' character
+
+```shell
+echo "He gave me $2500!"
+```
