@@ -209,7 +209,7 @@ echo Hello; World
 -bash: World: command not found
 ```
 
-The script ends after the ';' and then it tries to interpret the command ```World``` to no avail (unless it is set somewhere else).
+The script ends after the ```;``` and then it tries to interpret the command ```World``` to no avail (unless it is set somewhere else).
 
 Corrected:
 
