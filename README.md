@@ -6,7 +6,7 @@ A repo to document some basics in Unix/Linux scripting
 Say I have to directories in my current drive named Folder1 and Folder2, I can list all the directories with the name ```Folder``` with ```ls``` and directory flag ```-d```
 
 ```shell
-ls -d Folder
+$ ls -d Folder
 
 Folder1/ Folder2/ 
 ```
@@ -18,7 +18,7 @@ Folder1/ Folder2/
 In this example I have directories named Folder1, Folder2, Stuff, and Things. I can list only the directories in my current directory by using ```ls``` and flag ```-d``` like before, but now use the wildcard ```*``` with ```/``` (directory indicator). 
 
 ```shell
-ls -d */
+$ ls -d */
 
 Folder1/ Folder2/ Stuff/ Things/
 ```
@@ -56,8 +56,8 @@ When the percent sign (%) is used in the pattern ${variable%substring}, it will 
 
 This quick example will strip the extension off a sample ```csv``` file:
 ```shell
-f = file1.csv 
-echo "${f%.csv}"
+$ f = file1.csv 
+$ echo "${f%.csv}"
 
 file1
 ```
@@ -78,8 +78,8 @@ For example let's make a string ```this is a string```. We can run ```cut``` wit
 The use the ```-f``` flag will grab the number issued to the substring. So ```-f4``` will grab the fourth substring ```string```
 
 ```shell
-STR="this is a string"
-echo "$STR" | cut -d' ' -f4
+$ STR="this is a string"
+$ echo "$STR" | cut -d' ' -f4
 
 string
 ```
@@ -87,9 +87,9 @@ string
 The above code snippet just printed the substring to the console, but let's assign it to a variable:
 
 ```shell
-STR="this is a string"
-var="$(cut -d' ' -f 4 <<< $STR)"
-echo "$var"
+$ STR="this is a string"
+$ var="$(cut -d' ' -f 4 <<< $STR)"
+$ echo "$var"
 
 string
 ```
@@ -136,13 +136,13 @@ There are several operators in the shell:
 Example: print out numbers 0-9
 
 ```shell
-var=0 # initiate var to 0
+$ var=0 # initiate var to 0
 
-while [ $var -lt 10 ] # terms to loop over
-do
-   echo $var # print value of var
-   var=`expr $var + 1` # update var by adding 1 
-done
+$ while [ $var -lt 10 ] # terms to loop over
+> do
+>   echo $var # print value of var
+>   var=`expr $var + 1` # update var by adding 1 
+> done
 
 0
 1
@@ -163,12 +163,11 @@ Example: print names of all ```.sh``` files in directory named Shell that start 
 
 ```shell
 FILES=Shell/rename*.sh
-for f in $FILES
-do
-   echo $f
-done
+$ for f in $FILES
+$ do
+>   echo $f
+> done
 
->>>
 Shell/rename_multi.sh
 Shell/rename_multi_better.sh
 Shell/rename_multi_cut.sh
@@ -193,7 +192,7 @@ Example: the string "Hello; World"
 * ```;``` is a special character that expects the following information to be a separate script command:
 
 ```shell
-echo Hello; World
+$ echo Hello; World
 
 -bash: World: command not found
 ```
@@ -203,7 +202,7 @@ The script ends after the ```;``` and then it tries to interpret the command ```
 Corrected:
 
 ```shell
-echo Hello\; World
+$ echo Hello\; World
 
 Hello; World
 ```
@@ -211,7 +210,9 @@ Hello; World
 Example: ```$``` character
 
 ```shell
-echo "He gave me $2500!"
+$ echo "He gave me $2500!"
+
+He gave me $500!
 ```
 
 ## Grep
