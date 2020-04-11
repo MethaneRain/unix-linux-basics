@@ -256,7 +256,7 @@ To change the file in place, the flag ```-i``` needs to be run
 * Note, for macos ```sed``` there needs to be an additional ```''``` after the ```-i```:
 
 ```shell
-sed -i '' 's/Hellow Wolrd1/Hello World!/' file.txt
+$ sed -i '' 's/Hellow Wolrd1/Hello World!/' file.txt
 ```
 
 <li>Change the contents and save to different file</li>
@@ -264,7 +264,7 @@ sed -i '' 's/Hellow Wolrd1/Hello World!/' file.txt
 Save changes to new file (file2.txt) and keep unchanged contents of the original file (file.txt)
 
 ```shell
-sed 's/Hellow Wolrd1/Hello World!/' file.txt > file2.txt
+$ sed 's/Hellow Wolrd1/Hello World!/' file.txt > file2.txt
 ```
 
 </ol>
