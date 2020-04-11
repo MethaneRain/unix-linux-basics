@@ -128,3 +128,38 @@ There are several operators in the shell:
     <li>String Operators</li>
     <li>File Test Operators</li>
 </ul>
+
+---
+
+## Loops
+
+<u>
+    <li>The while loop</li>
+    <li>The for loop</li>
+    <li>The until loop</li>
+    <li>The select loop</li>
+</ul>
+
+#### while-loop
+
+Example: print out numbers 0-9
+
+```shell
+a=0
+
+while [ $a -lt 10 ]
+do
+   echo $a
+   a=`expr $a + 1`
+done
+```
+
+#### for-loop
+
+#### unitl-loop
+
+#### select-loop
+
+
+
+---
