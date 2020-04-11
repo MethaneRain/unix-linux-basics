@@ -108,15 +108,6 @@ $ mv file.txt file_rename.txt
 
 ---
 
-## Grep
-
-A very useful tool in shell scripting is ```grep```. 
-
-The grep filter searches a file for a particular pattern of characters, and displays all lines that contain that pattern. The pattern that is searched in the file is referred to as the regular expression (grep stands for globally search for regular expression and print out).
-
-
----
-
 ## Operators
 
 There are several operators in the shell:
@@ -225,3 +216,35 @@ Example: ```$``` character
 ```shell
 echo "He gave me $2500!"
 ```
+
+## Grep
+
+A very useful tool in shell scripting is ```grep```. 
+
+The grep filter searches a file for a particular pattern of characters, and displays all lines that contain that pattern. The pattern that is searched in the file is referred to as the regular expression (grep stands for globally search for regular expression and print out).
+
+
+---
+
+## Sed
+
+Another handy tool is ```sed```.
+
+The sed command allows for searching text within files, finding and replacing text, and insertion or deletion of text in files as well. 
+
+Example: say there exists a file ```file.txt``` with one line consisting of:
+
+```
+Hellow Wolrd1
+```
+
+Obviously there are some typos here, but sed can quick show changes:
+
+```shell
+$ sed 's/Hellow Wolrd1/Hello World!/' file.txt
+
+>>>
+Hello World!
+```
+
+* Note, this command only <strong><em>prints</em></strong> out to the screen what the changes would do, but it doesn't actually <strong><em>change</em></strong> the file
