@@ -226,7 +226,7 @@ The grep filter searches a file for a particular pattern of characters, and disp
 
 ## Sed
 
-Another handy tool is ```sed```.
+Another handy tool is ```sed```. 
 
 The sed command allows for searching text within files, finding and replacing text, and insertion or deletion of text in files as well. 
 
@@ -268,3 +268,5 @@ $ sed 's/Hellow Wolrd1/Hello World!/' file.txt > file2.txt
 ```
 
 </ol>
+
+More about ```sed``` here: https://github.com/MethaneRain/unix-linux-basics/blob/master/sed.md
