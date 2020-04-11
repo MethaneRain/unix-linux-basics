@@ -248,7 +248,8 @@ Hello World!
 
 There are two simple ways of saving the changes:
 
-1) Change the contents and save to the original file
+<ol>
+<li>Change the contents and save to the original file</li>
 
 To change the file in place, the flag ```-i``` needs to be run 
 
@@ -258,10 +259,12 @@ To change the file in place, the flag ```-i``` needs to be run
 sed -i '' 's/Hellow Wolrd1/Hello World!/' file.txt
 ```
 
-2) Change the contents and save to different file
+<li>Change the contents and save to different file</li>
 
 Save changes to new file (file2.txt) and keep unchanged contents of the original file (file.txt)
 
 ```shell
 sed 's/Hellow Wolrd1/Hello World!/' file.txt > file2.txt
 ```
+
+</ol>
