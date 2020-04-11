@@ -145,18 +145,28 @@ There are several operators in the shell:
 Example: print out numbers 0-9
 
 ```shell
-a=0
+var=0 # initiate var to 0
 
-while [ $a -lt 10 ]
+while [ $var -lt 10 ] # terms to loop over
 do
-   echo $a
-   a=`expr $a + 1`
+   echo $var # print value of var
+   var=`expr $var + 1` # update var by adding 1 
 done
 ```
 
 #### for-loop
 
-#### unitl-loop
+Example: print names of all text files in current directory
+
+```shell
+FILES=Shell/rename*.sh
+for f in $FILES
+do
+   echo $f
+done
+```
+
+#### until-loop
 
 #### select-loop
 
