@@ -5,87 +5,108 @@
 </tr>
 
 <tr>
-<td>allocatable</td>
-<td>allocate</td>
-<td>assign</td>
-<td>assignment</td>
+<td>Character</td>
+<td>Purpose</td>
+<td>Example</td>
+<td>Meaning</td>
 </tr>
 
 <tr>
-<td>call</td>
-<td>case</td>
-<td>character</td>
-<td>common</td>
+<td>$</td>
+<td>Variable Substitution</td>
+<td></td>
+<td></td>
 </tr>
 
 <tr>
-<td>call</td>
-<td>case</td>
-<td>character</td>
-<td>common</td>
+<td>!</td>
+<td>History Substitution</td>
+<td></td>
+<td></td>
 </tr>
 
 <tr>
-<td>call</td>
-<td>case</td>
-<td>character</td>
-<td>common</td>
+<td>*</td>
+<td>Filename Substitution</td>
+<td></td>
+<td></td>
 </tr>
 
 <tr>
-<td>call</td>
-<td>case</td>
-<td>character</td>
-<td>common</td>
+<td>?</td>
+<td>Filename Substitution</td>
+<td></td>
+<td></td>
 </tr>
 
 <tr>
-<td>call</td>
-<td>case</td>
-<td>character</td>
-<td>common</td>
+<td>[ ]</td>
+<td>Filename Substitution</td>
+<td></td>
+<td></td>
 </tr>
 
 <tr>
-<td>call</td>
-<td>case</td>
-<td>character</td>
-<td>common</td>
+<td>;</td>
+<td>Command Separator</td>
+<td></td>
+<td></td>
 </tr>
 
 <tr>
-<td>call</td>
-<td>case</td>
-<td>character</td>
-<td>common</td>
+<td>&</td>
+<td>Background Processing</td>
+<td></td>
+<td></td>
 </tr>
 
 <tr>
-<td>call</td>
-<td>case</td>
-<td>character</td>
-<td>common</td>
+<td>></td>
+<td>Redirection of Output</td>
+<td></td>
+<td></td>
 </tr>
 
 <tr>
-<td>call</td>
-<td>case</td>
-<td>character</td>
-<td>common</td>
+<td><</td>
+<td>Redirection of Input</td>
+<td></td>
+<td></td>
 </tr>
 
 <tr>
-<td>call</td>
-<td>case</td>
-<td>character</td>
-<td>common</td>
+<td>>&</td>
+<td>Redirection of Output and Error</td>
+<td></td>
+<td></td>
 </tr>
 
 <tr>
-<td>call</td>
-<td>case</td>
-<td>character</td>
-<td>common</td>
+<td>>!</td>
+<td>If ```noclobber``` is set; override</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>>>!</td>
+<td>If ```noclobber``` is set; override</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>( )</td>
+<td>Group of Commands in Subshell</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>{ }</td>
+<td>Group of Commands in Shell</td>
+<td></td>
+<td></td>
 </tr>
 
 </tbody></table>
