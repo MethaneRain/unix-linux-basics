@@ -152,11 +152,24 @@ do
    echo $var # print value of var
    var=`expr $var + 1` # update var by adding 1 
 done
+
+>>>
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
 ```
 
 #### for-loop
 
-Example: print names of all text files in current directory
+Example: print names of all shell files in current directory that start with rename
 
 ```shell
 FILES=Shell/rename*.sh
@@ -164,6 +177,11 @@ for f in $FILES
 do
    echo $f
 done
+
+>>>
+Shell/rename_multi.sh
+Shell/rename_multi_better.sh
+Shell/rename_multi_cut.sh
 ```
 
 #### until-loop
