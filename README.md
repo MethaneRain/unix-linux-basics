@@ -215,6 +215,8 @@ $ echo "He gave me $2500!"
 He gave me $500!
 ```
 
+---
+
 ## Grep
 
 A very useful tool in shell scripting is ```grep```. 
