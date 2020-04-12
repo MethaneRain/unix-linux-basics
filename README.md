@@ -272,3 +272,12 @@ $ sed 's/Hellow Wolrd1/Hello World!/' file.txt > file2.txt
 </ol>
 
 More about ```sed``` here: https://github.com/MethaneRain/unix-linux-basics/blob/master/sed.md
+
+---
+
+## Cat
+
+The ```cat``` (concatenate) command reads data from the file and gives the content as output. This allows the user to create, view, concatenate files.
+
+
+
