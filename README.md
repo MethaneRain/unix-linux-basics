@@ -279,5 +279,40 @@ More about ```sed``` here: https://github.com/MethaneRain/unix-linux-basics/blob
 
 The ```cat``` (concatenate) command reads data from the file and gives the content as output. This allows the user to create, view, concatenate files.
 
+---
 
+## Functions
+
+```shell
+isLeap()
+{
+	year=$1
+	if [ $(( $year % 4 )) -eq 0 ]; then
+		if [ $(( $year % 100 )) -eq 0 ]; then
+			if [ $(( $year % 400 )) -eq 0 ]; then
+				return 1
+			else
+				return 0
+			fi
+		else
+			return 0
+		fi
+	fi
+}
+
+# Leap year
+# No: 1800, 1900, 2100, 2200, 2300, 2500 
+# Yes: 2000, 2400
+
+for year in $@
+do
+	isLeap $year
+	retval=$?
+	if [ $retval -eq 0 ]; then
+		echo "$year : No"
+	else
+		echo "$year : Yes"
+	fi
+done
+```
 
