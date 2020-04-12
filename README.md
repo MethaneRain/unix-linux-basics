@@ -400,3 +400,5 @@ $ cat helloworld.sh | head -3
 # This is a comment!
 echo "Hello      World"       # This is a comment, too!
 ```
+
+Normally ```cat helloworld.sh``` would print the whole file and ```head -3 helloworld.sh``` would print out the first three lines. This is an overly simple example but still shows the value of the ```|``` cpmmand.
