@@ -277,7 +277,76 @@ More about ```sed``` here: https://github.com/MethaneRain/unix-linux-basics/blob
 
 ## Cat
 
-The ```cat``` (concatenate) command reads data from the file and gives the content as output. This allows the user to create, view, concatenate files.
+The ```cat``` (concatenate) command reads data from the file and gives the content as output. This allows the user to create, view, and concatenate files.
+
+Example: grab details of a simple shell script for getting info on netCDF files using ```ncdunmp``` that takes a cmd line argument for path to files
+
+```shell
+$ cat ncdump_mulitple_files.sh
+
+#!/bin/sh
+
+# Quick script to grab headers using ncdump for all netCDF files in specified
+# path given as a cmd argument
+
+#path=/path/to/files/*.nc
+path=${1}*.nc
+
+# allow script to run if no netCDF files are present
+# nothing will display if no files are present
+shopt -s nullglob
+
+# for-loop over .nc files in path
+for f in $path
+do
+  ncdump -h $f
+done
+
+```
+
+Example: getting details of multiple files
+
+```shell
+$ cat hellowrold.sh var.sh
+
+#!/bin/sh
+# This is a comment!
+echo "Hello      World"       # This is a comment, too!
+echo "Hello World"
+echo "Hello * World"
+echo Hello * World
+echo Hello      World
+echo "Hello" World
+echo Hello "     " World
+echo "Hello "*" World"
+echo `hello` world
+echo 'hello' world
+#!/bin/sh
+my_var="My first variable script"
+echo $my_var
+```
+
+Example: printing out details like before, but now with line numbers using the flag ```-n```
+
+```shel
+$ cat -n helloworld.sh
+
+ 1	#!/bin/sh
+ 2	# This is a comment!
+ 3	echo "Hello      World"       # This is a comment, too!
+ 4	echo "Hello World"
+ 5	echo "Hello * World"
+ 6	echo Hello * World
+ 7	echo Hello      World
+ 8	echo "Hello" World
+ 9	echo Hello "     " World
+ 10	echo "Hello "*" World"
+ 11	echo `hello` world
+ 12	echo 'hello' world
+ 
+```
+
+For more basic info check out: https://github.com/MethaneRain/unix-linux-basics/blob/master/cat.md
 
 ---
 
