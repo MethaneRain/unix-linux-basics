@@ -14,6 +14,5 @@ Options Description
 -f file : Takes patterns from file, one per line.
 -E : Treats pattern as an extended regular expression (ERE)
 -w : Match whole word
--o : Print only the matched parts of a matching line,
- with each such part on a separate output line.
+-o : Print only the matched parts of a matching line, with each such part on a separate output line.
 ```
