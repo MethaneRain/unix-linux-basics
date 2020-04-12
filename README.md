@@ -343,7 +343,7 @@ $ cat -n helloworld.sh
  10	echo "Hello "*" World"
  11	echo `hello` world
  12	echo 'hello' world
- 
+
 ```
 
 For more basic info check out: https://github.com/MethaneRain/unix-linux-basics/blob/master/cat.md
@@ -387,4 +387,16 @@ done
 
 ---
 
-## 
+## Pipe Command
+
+In shell scripting there exists a handy tool called the pipe command ```|``` that allows the output of one command to be the input of another.
+
+Example: use ```cat``` and ```head``` to read a file and print out the first 3 lines
+
+```shell
+$ cat helloworld.sh | head -3 
+
+#!/bin/sh
+# This is a comment!
+echo "Hello      World"       # This is a comment, too!
+```
