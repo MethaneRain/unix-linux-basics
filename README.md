@@ -25,6 +25,16 @@ Folder1/ Folder2/ Stuff/ Things/
 
 ---
 
+Example: find all file names using wildcard recursively in directories from current directory
+
+```shell
+$ find . -name "*.ipynb"
+
+./MSU_Dynamics/MSU Dynamics Lab_Student_Introduction.ipynb
+./MSU_Dynamics/MSU_Dynamics_Lab_Data.ipynb
+./python_class_example.ipynb
+```
+
 ## echo
 
 Simple printing to the console with ```echo```
