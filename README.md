@@ -414,3 +414,43 @@ echo "Hello      World"       # This is a comment, too!
 Normally ```cat helloworld.sh``` would print the whole file and ```head -3 helloworld.sh``` would print out the first three lines. This is an overly simple example but still shows the value of the ```|``` command.
 
 Example: 
+
+---
+
+## Environment and Shell Variables
+
+Environment variables are ons that will always be set no matter which shell environment your in. 
+
+For example, if you are open a terminal (new shell session) and type:
+```shell
+$ MY_VAR="silly variable"
+```
+
+For that session, the variable ```MY_VAR``` will return ```silly variable```:
+```shell
+$ echo $MY_VAR
+
+silly variable
+```
+
+However, if you close out your terminal (end shell session), then open a new terminal (new shell session) and type:
+
+```shell
+$ echo $MY_VAR
+```
+Nothing will display. That's because the ```MY_VAR``` was a <strong><em>shell</strong></em> variable. 
+
+Now say you run:
+```shell
+$ echo $HOME
+```
+
+You will get back ```/Users/<username>``` in any shell session you run. That's because ```HOME``` is an <strong><em>environment</strong></em>.
+
+The ```printenv``` command in the shell will indicate what are <strong><em>environment</strong></em> variables.
+
+So even if we set ```MY_VAR``` to ```silly variable```, running
+```shell
+$ printenv MY_VAR
+```
+will not display anything since it is not an environemt variable. 
