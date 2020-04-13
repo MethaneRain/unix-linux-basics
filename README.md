@@ -5,7 +5,7 @@ A repo to document some basics in Unix/Linux scripting
 
 Example: isting all directories in current working drive by name
 
-Say I have to directories in my current drive named Folder1 and Folder2, I can list all the directories with the name ```Folder``` with ```ls``` and directory flag ```-d```
+Say I have two directories in my current drive named Folder1 and Folder2, I can list all the directories with the name ```Folder``` with ```ls``` and directory flag ```-d```
 
 ```shell
 $ ls -d Folder
@@ -23,8 +23,6 @@ $ ls -d */
 Folder1/ Folder2/ Stuff/ Things/
 ```
 
----
-
 Example: find all file names using wildcard recursively in directories from current directory
 
 ```shell
@@ -34,6 +32,8 @@ $ find . -name "*.ipynb"
 ./MSU_Dynamics/MSU_Dynamics_Lab_Data.ipynb
 ./python_class_example.ipynb
 ```
+
+---
 
 ## echo
 
