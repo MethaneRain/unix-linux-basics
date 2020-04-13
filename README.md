@@ -1,7 +1,9 @@
 # unix-linux-basics
 A repo to document some basics in Unix/Linux scripting 
 
-## Listing all directories in current working drive by name
+## ls 
+
+Example: isting all directories in current working drive by name
 
 Say I have to directories in my current drive named Folder1 and Folder2, I can list all the directories with the name ```Folder``` with ```ls``` and directory flag ```-d```
 
@@ -11,9 +13,7 @@ $ ls -d Folder
 Folder1/ Folder2/ 
 ```
 
----
-
-## Listing all directories in current working drive
+Example: listing all directories in current working drive
 
 In this example I have directories named Folder1, Folder2, Stuff, and Things. I can list only the directories in my current directory by using ```ls``` and flag ```-d``` like before, but now use the wildcard ```*``` with ```/``` (directory indicator). 
 
@@ -25,7 +25,7 @@ Folder1/ Folder2/ Stuff/ Things/
 
 ---
 
-## Printing to console
+## echo
 
 Simple printing to the console with ```echo```
 
@@ -401,4 +401,6 @@ $ cat helloworld.sh | head -3
 echo "Hello      World"       # This is a comment, too!
 ```
 
-Normally ```cat helloworld.sh``` would print the whole file and ```head -3 helloworld.sh``` would print out the first three lines. This is an overly simple example but still shows the value of the ```|``` cpmmand.
+Normally ```cat helloworld.sh``` would print the whole file and ```head -3 helloworld.sh``` would print out the first three lines. This is an overly simple example but still shows the value of the ```|``` command.
+
+Example: 
